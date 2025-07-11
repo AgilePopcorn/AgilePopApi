@@ -1,4 +1,4 @@
-
+```
 # AgilePop API
 
 API para gerenciamento e divulgação de eventos da plataforma AgilePop.
@@ -97,7 +97,7 @@ Os testes validam cenários de criação de eventos, validações e listagem.
 Para dúvidas ou contribuições, entre em contato:  
 Victor - Desenvolvedor  
 Email: [contato@agilepop.com](mailto:contato@agilepop.com)  
-GitHub: [https://github.com/victor](https://github.com/victor)
+GitHub: [https://github.com/AgilePopcorn/AgilePopApi](https://github.com/AgilePopcorn/AgilePopApi)
 
 ---
 
@@ -105,3 +105,4 @@ GitHub: [https://github.com/victor](https://github.com/victor)
 
 Projeto aberto sob licença Apache 2.0.  
 Veja detalhes em: [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
+```
