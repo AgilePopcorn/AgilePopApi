@@ -1,4 +1,3 @@
-```
 # AgilePop API
 
 API para gerenciamento e divulgação de eventos da plataforma AgilePop.
