@@ -104,4 +104,3 @@ GitHub: [https://github.com/AgilePopcorn/AgilePopApi](https://github.com/AgilePo
 
 Projeto aberto sob licença Apache 2.0.  
 Veja detalhes em: [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
-```
