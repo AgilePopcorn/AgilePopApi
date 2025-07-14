@@ -4,49 +4,49 @@ API para gerenciamento e divulgação de eventos da plataforma AgilePop.
 
 ---
 
-## 📌 Descrição
+## 📌 Sobre o Projeto
 
-   O AgilePop é uma API REST desenvolvida em Java com Spring Boot para permitir o cadastro, listagem e validação de eventos.  
-   Esta API suporta validações de dados, documentação via Swagger/OpenAPI, e testes automatizados com JUnit.
+O **AgilePop API** é uma aplicação REST desenvolvida com **Java 17 + Spring Boot**, voltada para o cadastro, listagem e validação de eventos.  
+Idealizada de forma **colaborativa** e **voluntária** pelo grupo **Pipoca Ágil**, é um projeto de código aberto com foco educacional e social.
 
 ---
 
 ## 🚀 Como rodar o projeto localmente
 
-### Pré-requisitos
+### ✅ Pré-requisitos
 
 - Java 17 (ou superior)
 - Maven 3.6+
-- Git
+- Git instalado
 
-### Passo a passo para desenvolvedores
+### 🧪 Passo a passo para desenvolvedores
 
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/seu-usuario/agilepop.git
-   cd agilepop
-   ```
-
-2. Compile e baixe dependências:
+1. **Clone o repositório**
 
    ```bash
-   mvn clean install
+   git clone https://github.com/pipoca-agil/agilepop-api.git
+   cd agilepop-api
    ```
 
-3. Execute a aplicação:
+2.**Compile e instale dependências**
 
-   ```bash
-   mvn spring-boot:run
-   ```
+```bash
+mvn clean install
+```
 
-4. A API estará rodando em:
+2.**Execute a aplicação**
+
+```bash
+mvn spring-boot:run
+```
+
+4.A API estará rodando em:
 
    ```http
    http://localhost:8080/api/eventos
    ```
 
-5. Acesse a documentação Swagger para testar endpoints:
+5.Acesse a documentação Swagger para testar endpoints:
 
    ```http
    http://localhost:8080/swagger-ui.html
@@ -96,7 +96,7 @@ Os testes validam cenários de criação de eventos, validações e listagem.
 Para dúvidas ou contribuições, entre em contato:  
 Victor - Desenvolvedor  
 Email: [contato@agilepop.com](mailto:contato@agilepop.com)  
-GitHub: [https://github.com/AgilePopcorn/AgilePopApi](https://github.com/AgilePopcorn/AgilePopApi)
+GitHub: [https://github.com/victor](https://github.com/victor)
 
 ---
 
