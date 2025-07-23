@@ -13,46 +13,104 @@ Idealizada de forma **colaborativa** e **voluntária** pelo grupo **Pipoca Ágil
 
 ## 🚀 Como rodar o projeto localmente
 
-### ✅ Pré-requisitos
+Você pode rodar a aplicação de duas formas:
 
-- Java 17 (ou superior)
-- Maven 3.6+
-- Git instalado
+- [x] **Usando Maven localmente**
+- [x] **Usando Docker Compose (PostgreSQL via container)**
 
-### 🧪 Passo a passo para desenvolvedores
+---
+
+### 🧪 Opção 1: Rodando com Maven (modo local)
+
+#### ✅ Pré-requisitos
+
+- Java 17 (ou superior)  
+- Maven 3.6+ instalado  
+- Git instalado  
+
+#### ▶️ Passo a passo
 
 1. **Clone o repositório**
 
+    ```bash
+    git clone https://github.com/pipoca-agil/agilepop-api.git
+    cd agilepop-api
+    ```
+
+2. **Compile e instale dependências**
+
+    ```bash
+    mvn clean install
+    ```
+
+3. **Execute a aplicação**
+
+    ```bash
+    mvn spring-boot:run
+    ```
+
+4. **A API estará rodando em:**
+
    ```bash
-   git clone https://github.com/pipoca-agil/agilepop-api.git
-   cd agilepop-api
-   ```
-
-2.**Compile e instale dependências**
-
-```bash
-mvn clean install
-```
-
-2.**Execute a aplicação**
-
-```bash
-mvn spring-boot:run
-```
-
-4.A API estará rodando em:
-
-   ```http
    http://localhost:8080/api/eventos
    ```
 
-5.Acesse a documentação Swagger para testar endpoints:
+5. **Acesse a documentação Swagger para testar endpoints:**
 
-   ```http
-   http://localhost:8080/swagger-ui.html
+   ```bash
+   http://localhost:8080/swagger-ui/index.html
    ```
 
 ---
+
+### 🐳 Opção 2: Rodando com Docker Compose
+
+#### *✅ Pré-requisitos
+
+- Docker instalado e funcionando  
+- Docker Desktop no Windows/macOS  
+
+#### *▶️ Passo a passo
+
+1. **Clone o repositório**
+
+    ```bash
+    git clone https://github.com/pipoca-agil/agilepop-api.git
+    cd agilepop-api
+    ```
+
+2. **Suba o container com PostgreSQL**
+
+    ```bash
+    docker-compose up -d
+    ```
+
+3. **Verifique se o banco está ativo**
+
+    O banco será iniciado no container com as seguintes credenciais:
+
+    - Banco: `agilepop`  
+    - Usuário: `postgres`  
+    - Senha: `123456`  
+
+    A aplicação usa o perfil `application-prod.properties`, que já está configurado para conectar nesse banco.
+
+4. **Acesse a documentação Swagger:**
+
+    ```bash
+    http://localhost:8080/swagger-ui/index.html
+    ```
+
+---
+
+❗ **Importante**:  
+O arquivo `application.properties` está comentado propositalmente para que o `application-prod.properties` seja utilizado com o banco PostgreSQL.
+
+💡 **Dica**: Se quiser parar os containers:
+
+   ```bash
+   docker-compose down
+   ```
 
 ## 🧪 Rodando os testes automatizados
 
